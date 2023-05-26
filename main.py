@@ -499,3 +499,19 @@
 # r = int(input("Ведите радиус "))
 # res = 2 * 3.14 * r
 # print(f"Длина окружности - {res}")
+                
+# a = [True, True, True, False]
+# print(any(a))
+# print(all(a))
+
+# a = -5
+# b = abs(a) * 2
+# print(b)
+
+# num = 3.16388739
+# print(round(num, 3))
+
+# lst = ['one', 'two', 'three', 'four']
+# print
+
+
