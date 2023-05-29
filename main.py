@@ -514,4 +514,100 @@
 # lst = ['one', 'two', 'three', 'four']
 # print
 
+# import os
+# print(os.getlogin())
+
+# import os
+# print(os.uname())
+
+# import sys
+# print(sys.version)
+
+# import sys
+# print(sys.platform)
+
+# from random import random, randrange
+# num = randrange(0, 100, 10)
+# print(num)
+
+# from random import random, randrange, choice
+# a = ('ilyaz', 'asan', 'aruuke', 'ayerim')
+# print(choice(a))
+
+# from random import random, randrange, choice, sample
+# a = ('ilyaz', 'asan', 'aruuke', 'ayerim')
+# print(choice(a))
+# print(sample(a, 3))
+
+# from random import randint
+# count = 3
+# while count > 0:
+#     random_number = randint(0, 10)
+#     user = int(input('Ведите цифру; '))
+#     if user > 10:
+#         print('Ведите цуфру от 0 до 10')
+#     elif user == random_number:
+#         print('Вы угадали')
+#         break
+#     elif user != random_number:
+#         print('Вы не угадали')
+#         count -= 1
+#         print(random_number)
+
+# import time
+# for i in range(1, 11):
+#     print(i)
+#     time.sleep(0.5)
+
+# import math
+# print(math.ceil(4.3))
+# print(math.floor(4.3))
+# print(math.factorial(5))
+# print(math.fmod(10, 3))
+
+# from one import a
+# print(a)
+
+# from one import names 
+# import random
+# print(random.sample(names, 4))
+
+# import sys
+# print(sys.platform)
+
+# import sys
+
+# value1 = input()
+# value2 = input()
+
+# res1 = sys.getsizeof(value1)
+# res2 = sys.getsizeof(value2)
+
+# if res1 > res2:
+#     print("Первый объект занимает больше места чем второй")
+# elif res2 > res1:
+#     print("Второй объект занимает больше места чем первый")
+# else:
+#     print("Они ровны")
+
+# import random
+# import string
+
+# def generate_password(length):
+#     characters = string.ascii_letters + string.digits
+#     password = ''.join(random.choice(characters) for _ in range(length))
+#     return password
+
+# N = int(input("Введите длину пароля: "))
+
+# password = generate_password(N)
+# print("Сгенерированный пароль:", password)
+
+# import datetime
+
+# current_date = datetime.date.today()
+
+# future_date = current_date - datetime.timedelta(days=1000)
+
+# print("Дата через 1000 дней:", future_date)
 

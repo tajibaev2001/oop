@@ -209,22 +209,42 @@
 # for word in t_words:
 #     print(word)
 
-numbers = [12, 34, 54, 2, 23, 1]
-file_name  = "user.txt"
-with open(file_name, "w") as file:
-    for number in numbers:
-        file.write(str(number) + "\n")
+# numbers = [12, 34, 54, 2, 23, 1]
+# file_name  = "user.txt"
+# with open(file_name, "w") as file:
+#     for number in numbers:
+#         file.write(str(number) + "\n")
 
-max_number = float("-inf")
-min_number = float("inf")
+# max_number = float("-inf")
+# min_number = float("inf")
 
-with open(file_name, "r") as file:
-    for i in file:
-        number = int(i.strip())
-        max_number = max(max_number, number)
-        min_number = min(min_number, number)
-output_file = "result.txt"
-with open(output_file, "w") as file:
-   file.write("Максимальное число: " + str(max_number) + "\n")
-   file.write("Минимальное число: " + str(min_number) + "\n")
-print("Максимальное и минимальное число записан файл", output_file)
+# with open(file_name, "r") as file:
+#     for i in file:
+#         number = int(i.strip())
+#         max_number = max(max_number, number)
+#         min_number = min(min_number, number)
+# output_file = "result.txt"
+# with open(output_file, "w") as file:
+#    file.write("Максимальное число: " + str(max_number) + "\n")
+#    file.write("Минимальное число: " + str(min_number) + "\n")
+# print("Максимальное и минимальное число записан файл", output_file)
+
+# import time
+# password = 123456
+# count = 3
+# loged_in = False
+
+# while count > 0:
+#     user_input = int(input("Введите пароль"))
+    
+#     if user_input == password:
+#         loged_in = True
+#         break
+#     else:
+#         count -= 1
+#         print("Неверный пароль.Повторите попытку")
+#         time.sleep(5) 
+# if loged_in:
+#     print("Вход выполнен") 
+# else:
+#     print("У вас не осталось попыток")
