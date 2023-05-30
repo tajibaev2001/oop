@@ -219,7 +219,7 @@
 
 # print(name)
 # num = [1, 4, 5, 7,]
-# # num.insert(0, 23)
+# num.insert(0, 23)
 # print(num)
  
 # names = ('ilyaz', 'asan', 'aygerim')
@@ -266,7 +266,7 @@
 # print(a)
 
 # names = ["asan", "aliya", "ilyaz"]
-# for i in names:
+# for i in names():
 #     print(i)
 # a = [1,1,2]
 # for i in a:
@@ -557,7 +557,7 @@
 # import time
 # for i in range(1, 11):
 #     print(i)
-#     time.sleep(0.5)
+    # time.sleep(0.5)
 
 # import math
 # print(math.ceil(4.3))
@@ -611,3 +611,88 @@
 
 # print("Дата через 1000 дней:", future_date)
 
+# def num_summ(a, b):
+#     print(a + b)
+# a = 13
+# b = 7
+# result = num_summ(a, b)
+
+# my_list = [1, 'Ilyaz', 3.5]
+
+# def length():
+#     result = 0
+#     for i in my_list:
+#         result += 1
+#     print(f"Список состоит из {result} элементов")
+
+# length()
+
+# def split_and_reversed(lst):
+#     middle = len(lst) // 2
+
+#     left_half = lst[:middle][::-1]
+#     right_half = lst[middle:][::-1]
+
+#     reversed_list = left_half + right_half
+
+#     return reversed_list
+
+# list_1 = ['name', 'age', '1', '19']
+# modifided_list = split_and_reversed(list_1)
+
+# print("Оргиналный лист-", list_1)
+# print("Измененный лист-", modifided_list)
+# def bot():
+#    while True:
+      
+#     user = input()
+#     if type(user) != str(user):
+#        print("Введите слово")
+#     elif user == "":
+#         print("Как классно, когда ты молчишь. Продолжай в том же духе!")
+#     elif user.upper() == user:
+#         print("Успакойся")
+#     elif "?" in user:
+#         print("Конечно")
+#     else:
+#         print("Ну и что")
+        
+# bot()
+
+# def num_summ(a, b):
+#     return a + b
+# def num_min(a, b):
+#     return a - b
+# def calc(a, b):
+#    c = num_summ(a, b)
+#    d = num_min(a, b)
+#    return c, d
+# a = 16
+# b = 17
+# f = calc(a, b)
+# print(f)
+
+# def create_file(f):
+#     with open(f, "w") as file:
+#         file.write("Hello, World")
+
+# file_name = input()
+    
+# result = create_file
+
+# result = create_file(file_name)
+
+# import random
+
+# def get_number():
+#     code = '0444'
+#     number = code
+    
+#     for i in range(6):
+#         digit = random.choice(['1','4', '5', '7', '9', '0'])  
+#         number += digit
+#     return number
+
+# phone_number = get_number() 
+
+# print("Сгенерированный номер", phone_number)

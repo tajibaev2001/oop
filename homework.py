@@ -247,4 +247,28 @@
 # if loged_in:
 #     print("Вход выполнен") 
 # else:
-#     print("У вас не осталось попыток")
+# #     print("У вас не осталось попыток")
+
+# password = 12345
+# count = 3
+# loged_in = False
+# while count > 0:
+#     try:
+#         user_input = int(input("Ведите пароль: "))
+#         if user_input == password:
+#             loged_in = True
+#             break
+#         else:
+#             count -= 1
+#             print("Неверный пароль.Повторите попытку")
+#     except ValueError:
+#         print("Пороль состаить из цифр")
+# if loged_in:
+#     print("Вход выполнен")
+# else:
+#     print("Неверный пароль.Повторите попытку через 30 секунт ")
+
+
+numbers = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
+for i in numbers:
+   
