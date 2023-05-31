@@ -269,6 +269,107 @@
 #     print("Неверный пароль.Повторите попытку через 30 секунт ")
 
 
-numbers = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
-for i in numbers:
+# numbers = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
+# for i in numbers:
    
+# def main():
+#     result = 9 +7
+#     print(result)
+# main()
+
+# def summ(*args):
+#     return sum(args)
+# print(summ(1, 2, 4, 5, 7))
+
+# def info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}:{value}")  
+# info(name  = "ffe, age = 23")
+
+# def add(a, b):
+#     result = a + b
+#     return result
+# print(add(18, 11))
+
+# def substract(a, b):
+#     result = a - b
+#     print(result)
+# substract(19, 20)
+
+# def multiply(a, b):
+#     result = a * b
+#     return result
+# print(multiply(12, 12))
+
+
+# def divide(a, b):
+#     result = a / b
+#     return result
+# print(divide(20, 10))
+
+# def count_characters(sentence):
+#     num = 0
+
+#     for char in sentence:
+#         if char.isalpha():
+#             num += 1
+
+#     return num 
+# sentence = input("")
+# character_count = count_characters(sentence)
+
+# print("Количество символов", character_count)
+
+# a = ("Ilyaz")
+# b = ("Tajibaev")
+# result = a + b
+# print(result)
+
+# dik1 = {"a":1, "b":2}
+# dik2 = {"a":3, "b":4}
+
+# import os
+# def menu():
+#     food = input()
+#     drink = input()
+
+#     desktop_path = os.path.join(os.path.expanduser("~"), "Рабочий стол")
+#     file_path = os.path.join(desktop_path, "menu.txt")
+ 
+#     with open(file_path, "w") as file:
+#         file.write(f"Ваш заказ:  {food}, {drink}")
+
+# menu()
+ 
+# import os
+
+# def dir(word):
+#     our_dir = os.getcwd()
+
+#     file_path = os.path.join(our_dir, f"{word}.py")
+
+#     with open(file_path, "w") as file:
+#         file.write("")
+
+# word = input()
+# dir(word)
+
+# def dictionary_split(dictionary):
+#     keys = tuple(dictionary.keys())
+#     values = tuple(dictionary.values())
+#     return keys, values
+    
+# dictionary = {"name": "David", "age": 25, "place":"New york"}
+
+# keyss, valuess = dictionary_split(dictionary)    
+# print(f"Ключи - {keyss}")
+# print(f"Значения - {valuess}")
+
+
+
+
+
+
+
+
+
