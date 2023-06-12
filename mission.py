@@ -147,3 +147,122 @@
 #             print(f"Файл {image2} отсуствует")
 
 # image()
+
+
+# def bank_depos():
+#     a = int(input("Введите вклад - "))
+#     b = int(input("На сколько лет ? "))
+#     res = b *(a / 100 * 10)
+#     print(round(res))
+# bank_depos()
+
+# def is_prime():
+#     a = int(input("Ведите число "))
+#     b = 1000
+#     c = 0
+#     if c <= a <= b:
+#         print(True)
+#     else:
+#         print(False)
+# is_prime()
+    
+# is_nice = True
+# state = "nice" if is_nice else "not_nice"
+# print(state)
+
+# nice = True
+# personality = ("вредная", "добрая")[nice]
+# print("кошка", personality)
+
+# user = int(input())
+# state = "chatnyi" if user % 2 == 0 else "nechatnyi"
+# print(state) 
+    
+# num = int(input())
+# res = ("no", "yes")[num % 2 == 0]
+# print(res)
+
+# def palindrom(x):
+#     if len(x)<=1:
+#         return True
+#     if x[0] != x[-1]:
+#         return False
+#     return palindrom(x[1:-1])
+
+# print(palindrom("нан"))
+
+# def rec(w):
+#     if len(w) == 1 or len(w) == 2:
+#         return w
+#     return w[0] + "(" + rec(w[1:-1]) + ")" + w[-1]
+# w = input()
+# print(rec(w))
+
+# def search_find(str1, str2):
+#     if str1.lower() in str2.lower():
+#         print("Есть контакт")
+#     else:
+#         print("Мимо")
+# str1 = "Ilyaz"
+# str2 = "IlyazTajibaev"
+# search_find(str1, str2)
+
+# def  biggest_dict(**kwargs):
+#     my_dict = {'first_one': 'we can do it'}
+#     my_dict.update(kwargs)
+#     return my_dict
+# print(biggest_dict(name = 'Ilyaz', lasname = 'Tajibaev', age = 22))
+    
+
+# list1 = [5, 10, 15, 20, 25, 50, 20]
+# a = list1.index(20)
+# list1[a] = 200
+# print(list1)
+
+# aList = [1, 2, 3, 4, 5, 6, 7]
+# res = []
+# for i in aList:
+#     res.append(i**2)
+# print(res)
+   
+# list = [5, 20, 15, 20, 25, 50, 20]
+
+# def removeValue(sampleList, val):
+#    return [value for value in sampleList if value != val]
+# resList = removeValue(list, 20)
+# print(resList)
+
+# letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'
+# list = ""
+# for i in letters:
+#     if not i.isupper():
+#         list += i
+# letters = list
+# print(letters)
+
+# numbers = [1, 2, 3, 4, 5, 1, 2, 3]
+# list1 = set(numbers)
+# # list1.intersection()
+# # list2 = list(list1)
+# print(list1)
+
+# import random
+
+# def arit(c):
+#     a = random.randint(20, 30)
+#     b = random.randint(1, 20)
+#     if c == "+":
+#         print(a + b)
+#     elif c == "-":
+#         print(a - b)
+#     elif c == "*":
+#         print(a * b)
+#     elif c == "/":
+#         print(a / b)
+#     else:
+#         print("Неизвестная операция")
+#     print(f"Перовое число - {a}, Второе число - {b}")
+# c = input()
+# arit(c)
+      
+          
