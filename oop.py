@@ -266,36 +266,36 @@
 #     animal.info()
 #     animal.make_sound()
 
-from math import pi
+# from math import pi
 
-class Shape:
-    def __init__(self, name):
-        self.name = name
+# class Shape:
+#     def __init__(self, name):
+#         self.name = name
 
-    def area(self):
-        pass
+#     def area(self):
+#         pass
 
-    def fact(self):
-        return "I am a two-dimensional shape."
+#     def fact(self):
+#         return "I am a two-dimensional shape."
     
-class Square(Shape):
-    def __init__(self, length):
-        super().__init__("Square")
-        self.length = length
+# class Square(Shape):
+#     def __init__(self, length):
+#         super().__init__("Square")
+#         self.length = length
 
-    def area(self):
-        return self.length**2
+#     def area(self):
+#         return self.length**2
     
-    def fact(self):
-        return "Square have each angle equal to 90 degrees."
+#     def fact(self):
+#         return "Square have each angle equal to 90 degrees."
     
-class Circle(Shape):
-    def __init__(self, radius):
-        super().__init__("Circle")
-        self.radius = radius
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         super().__init__("Circle")
+#         self.radius = radius
 
-    def area(self):
-        return pi*self.radius**2
+#     def area(self):
+#         return pi*self.radius**2
 
 # class Circle(Shape):
 #     def __init__(self, radius):
@@ -305,9 +305,328 @@ class Circle(Shape):
 #     def area(self):
 #         return pi*self.radius**2
     
-a = Square(4)
-b = Circle(7)
-print(b)
-print(b.fact())
-print(a.fact())
-print(b.area())
+# a = Square(4)
+# b = Circle(7)
+# print(b)
+# print(b.fact())
+# print(a.fact())
+# print(b.area())
+
+# class Nikola:
+#     def __init__(self, name, age):
+#         self.name = self._process_name(name)
+#         self.age = age
+
+#     def _process_name(self, name):
+#         if "Николай" not in name:
+#             return "Я не " + name + " а Николай"
+#         return name
+# nik = Nikola("Николай", 25)
+# print(nik._process_name("Максим"))        
+
+
+# class Phone:
+#     username = "Kate"
+#     __how_many_times_turned_on = 0
+
+#     def call(self):
+#         print("Rin-ring")
+
+#     def __turn_on(self):
+#         self.__how_many_times_turned_on += 1
+#         print("Times waas turbed on", self.__how_many_times_turned_on )
+
+# my_phone = Phone()
+# my_phone.call()
+# my_phone._Phone__turn_on()
+# my_phone._Phone__how_many_times_turned_on
+# print(my_phone._Phone__how_many_times_turned_on)
+
+# class Person:
+#     def __init__(self, name):
+#         self.__name = name
+#         self.__age = 1
+
+#     def set_age(self, age):
+#         if 1 < age < 110:
+#             self.__age = age
+#         else:
+#             print("Не допустимый возраст")
+    
+#     def get_age(self):
+#         return self.__age
+    
+#     def get_name(self):
+#         return self.__name
+    
+#     def display_info(self):
+#         print(f"Имя: {self.__name}\tВозраст: {self.__age}")
+
+# tom = Person("Tom")
+# tom.display_info()
+
+
+# class ShoppingCar:
+#     def __init__(self):
+#         self.__items = []
+
+#     def add_item(self, item):
+#         self.__items.append(item)
+           
+#     def remove_items(self, item):
+#         if item in self.__items:
+#             self.__items.remove(item)
+
+#     def get_items(self):
+#         return self.__items 
+    
+#     def claer_items(self):
+#         self.__items = []
+# c = ShoppingCar()
+# c.add_item("Обувь")
+# c.add_item("Худи")
+# c.remove_items("Обувь")
+# print(c.get_items())
+                     
+
+# from abc import ABC, abstractmethod
+
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Rectangle(Shape):
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+    
+#     def area(self):
+#         return self.length * self.width
+
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+    
+#     def area(self):
+#         return 3.14 * self.radius**2
+
+# # shape = Shape()  # Нельзя создать экземпляр абстрактного класса
+
+# rectangle = Rectangle(4, 6)
+# circle = Circle(5)
+
+# print(rectangle.area())  # Выводит: 24
+# print(circle.area())     # Выводит: 78.5
+
+# from abc import ABC, abstractmethod  
+# class Car(ABC):  
+#     @abstractmethod
+#     def mileage(self):  
+#         pass 
+ 
+# class Tesla(Car):  
+#     def mileage(self):  
+#         print("The mileage is 30kmph")  
+
+# class Suzuki(Car):  
+#     def mileage(self):  
+#         print("The mileage is 25kmph")  
+
+# class Duster(Car):  
+#    def mileage(self):  
+#         print("The mileage is 24kmph ")  
+ 
+# class Renault(Car):  
+#     def mileage(self):  
+#         print("The mileage is 27kmph ")  
+ 
+# # Driver code  
+# t= Tesla ()  
+# t.mileage()  
+ 
+# r = Renault()  
+# r.mileage()  
+ 
+# s = Suzuki()  
+# s.mileage() 
+ 
+# d = Duster()  
+# d.mileage()
+
+# from abc import ABC, abstractmethod
+# class Absclass(ABC):
+#     def print(self,x):
+#         print("Passed value: ", x)
+#     @abstractmethod
+#     def task(self):
+#         print("We are inside Absclass task")
+
+# class test_class(Absclass):
+#     def task(self):
+#         print("Мы внутри задачи test_class")
+
+# class example_class(Absclass):
+#     def task(self):
+#         print("Мы внутри задачи example_class")
+
+# #object of test_class created
+# test_obj = test_class()
+# test_obj.task()
+# test_obj.print(10)
+
+# # #object of example_class created
+# example_obj = example_class()
+# example_obj.task()
+# example_obj.print(200)
+
+# print("test_obj is instance of Absclass? ", isinstance(test_obj, Absclass))
+# print("example_obj is instance of Absclass? ", isinstance(example_obj, Absclass))
+
+# class Car:
+#     def __init__(self, make, model, mileage):
+#         self._make = make
+#         self._model = model
+#         self.mileage = mileage
+    
+#     def get_info(self):
+#         return self._make
+    
+#     def get_info(self):
+#         print(f{self.__model})
+    
+#     def get_info(self):
+#         print(self.mileage)
+    
+# car = Car("tayota", "supra", "The mileage is 300km")
+# car.get_info()
+# car.get_info()
+# car.get_info()
+
+# class Banknote:
+#     def __init__(self, value):
+#         self.value = value
+
+#     def __str__(self):
+#         return f"Банкнот {self.value} сом"
+    
+#     def __eq__(self, object):
+#         if object is None and not isinstance(object, Banknote):
+#             return False
+#         return self.value == object.value
+    
+#     def __lt__(self,object):
+#         if object is None and not isinstance(object, Banknote):
+#             return False
+#         return self.value < object.value
+#     def __gt__(self, object):
+#         if object is None and not isinstance(object, Banknote):
+#             return False
+#         return self.value > object.value
+    
+#     def __le__(self, object):
+#         if object is None and not isinstance(object, Banknote):
+#             return False
+#         return self.value <= object.value
+    
+#     def __ge__(self, object):
+#         if object is None and not isinstance(object, Banknote):
+#             return False
+#         return self.value >= object.value
+    
+# class Wallet:   
+#     def __init__(self, *banknotes:Banknote):
+#         self.conteiner = []
+#         self.conteiner.extend(banknotes)
+#         self.index = 0
+#     def __str__(self):
+#         return f"Wallet {self.conteiner}"
+    
+#     def __contains__(self, item):
+#         return item in self.conteiner
+    
+#     def __bool__(self):
+#         return len(self.conteiner) > 0
+    
+#     def __len__(self):
+#         return len(self.conteiner)
+
+#     def __call__(self):
+#         return f"{sum(i for i in self.conteiner)} money"
+    
+#     def __iter__(self):
+#         return self
+    
+#     def __next__(self):
+#         if 0 <= self.index < len(self.conteiner):
+#             value = self.conteiner[self.index]
+#             self.index += 1
+#             return value
+#         raise StopIteration
+    
+#     def __getitem__(self, item: int):
+#         if item < 0 and item > len(self.conteiner):
+#             raise IndexError
+#         return self.conteiner[item]
+     
+#     def __setitem__(self, key: int, value: Banknote):
+#         if key < 0 and key > len(self.conteiner):
+#             raise IndexError
+#         self.conteiner[key] = value
+
+
+# b = Banknote(100)
+# c = Banknote(100)
+# w = Wallet(1000, 2000, 3000, 4000)
+# # if w:
+# #     print("yes")
+# # else:
+# #     print("no")
+# # # print(10 in w)
+# # print(len(w))
+# # print(w())
+# # for i in w:
+# #     print(i)
+# # print(w[0])
+# w[0] = 100
+# print(w)
+
+# class Baseclass:
+#     def test(self):
+#         print("Baseclass")
+
+# class Mixin:
+#     def testing(self):
+#         print("Mixin")
+
+# class Myclass(Mixin, Baseclass):
+#     pass
+
+# obj = Myclass()
+# obj.test()
+# obj.testing()
+class Entity:
+    def __init__(self, pos_x, pos_y):
+        self.pos_x = pos_x
+        self.pos_y = pos_y
+
+class SquareMixin:
+    def add_size(self, size_x):
+        self.size_x = size_x
+        self.size_y = size_x
+
+    def perimeter(self):
+        return self.size_x * self.size_x
+    
+    def square(self):
+        return self.size_x * self.size_x
+    
+class SquareEntity(SquareMixin, Entity):
+    pass
+square = SquareEntity(5, 4)
+square.add_size(500)
+print(square.size_x)
+print(square.size_y)
+print(square.square())
+print(square.perimeter())
+
